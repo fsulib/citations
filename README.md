@@ -1,1 +1,2 @@
-# dynamic_citations
+# Citations
+Components and utilities for generating citations from Drupal data.

@@ -1,0 +1,4 @@
+name: Citations 
+description: Components and utilities for generating citations from Drupal data.
+type: module
+core: 8.x

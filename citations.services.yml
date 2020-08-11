@@ -1,0 +1,7 @@
+services:
+  logger.channel.citations:
+    parent: logger.channel_base
+    arguments: ['citations']
+  citations.default:
+    class: Drupal\citations\Service\CitationsService
+    arguments: []
