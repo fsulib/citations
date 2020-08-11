@@ -1,0 +1,16 @@
+
+# Entity metadata mapping menu items definition
+entity.entity_metadata_mapping.collection:
+  title: 'Entity metadata mapping'
+  route_name: entity.entity_metadata_mapping.collection
+  description: 'List Entity metadata mapping (bundles)'
+  parent: system.admin_structure
+  weight: 99
+
+# Citation style menu items definition
+entity.citation_style.collection:
+  title: 'Citation style'
+  route_name: entity.citation_style.collection
+  description: 'List Citation style (bundles)'
+  parent: system.admin_structure
+  weight: 99

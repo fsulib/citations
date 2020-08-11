@@ -1,0 +1,12 @@
+citations.entity_metadata_mapping.*:
+  type: config_entity
+  label: 'Entity metadata mapping config'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+    uuid:
+      type: string
