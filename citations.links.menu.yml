@@ -1,7 +1,0 @@
-# Entity metadata mapping menu items definition
-entity.entity_metadata_mapping.collection:
-  title: 'Entity metadata mapping'
-  route_name: entity.entity_metadata_mapping.collection
-  description: 'List Entity metadata mapping (bundles)'
-  parent: system.admin_structure
-  weight: 99

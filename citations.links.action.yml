@@ -1,5 +1,0 @@
-entity.entity_metadata_mapping.add_form:
-  route_name: entity.entity_metadata_mapping.add_form
-  title: 'Add Entity metadata mapping'
-  appears_on:
-    - entity.entity_metadata_mapping.collection
