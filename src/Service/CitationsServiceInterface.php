@@ -11,6 +11,7 @@ interface CitationsServiceInterface {
   public function renderFromMetadata($metadata, $style, $mode);
   public function renderCitationFromMetadata($metadata, $style);
   public function renderBibliographyFromMetadata($metadata, $style);
-  public function getStyleTitle($style);
+  public function getStylePath($style);
+  public function getStyleMetadata($style);
 
 }
