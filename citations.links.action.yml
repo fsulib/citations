@@ -3,8 +3,3 @@ entity.entity_metadata_mapping.add_form:
   title: 'Add Entity metadata mapping'
   appears_on:
     - entity.entity_metadata_mapping.collection
-entity.citation_style.add_form:
-  route_name: entity.citation_style.add_form
-  title: 'Add Citation style'
-  appears_on:
-    - entity.citation_style.collection

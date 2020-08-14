@@ -2,6 +2,10 @@
 
 namespace Drupal\citations;
 
+use Drupal\node\Entity\Node;
+use Seboettg\CiteProc\StyleSheet;
+use Seboettg\CiteProc\CiteProc;
+
 /**
  * Class CitationsService.
  */
@@ -12,6 +16,23 @@ class CitationsService implements CitationsServiceInterface {
    */
   public function __construct() {
 
+  }
+
+  public function renderCitationMetadataFromNode($nid) {
+  }
+
+  public function renderFromMetadata($metadata, $style, $mode) {
+    $stylesheet = StyleSheet::loadStyleSheet($style);
+    $citeProc = new CiteProc($stylesheet);
+    return $citeProc->render($metadata, $mode);
+  }
+
+  public function renderCitationFromMetadata($metadata, $style) {
+    return \Drupal::service('citations.default')->renderFromMetadata($metadata, $style, 'citation');
+  }
+
+  public function renderBibliographyFromMetadata($metadata, $style) {
+    return \Drupal::service('citations.default')->renderFromMetadata($metadata, $style, 'bibliography');
   }
 
 }
