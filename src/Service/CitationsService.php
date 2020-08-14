@@ -34,5 +34,11 @@ class CitationsService implements CitationsServiceInterface {
   public function renderBibliographyFromMetadata($metadata, $style) {
     return \Drupal::service('citations.default')->renderFromMetadata($metadata, $style, 'bibliography');
   }
+ 
+  public function getStyleTitle($style) {
+    $xml = simplexml_load_file('acta-polytechnica.csl');    
+    $title = (string) $xml->info->title;    
+    return $title;
+  }
 
 }
